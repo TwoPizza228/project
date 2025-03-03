@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'SBSansDisplay-Light';
+    src: url(../fonts/SBSansDisplay-Light.ttf) format('woff2');
+}
+
+body {
+    font-family: 'SBSansDisplay-Light', sans-serif;
+    color: rgb(51, 63, 72);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 63, 72);
+}
+
+h1,
+h2,
+h3,
+hr {
+    margin: 0;
+}
+
+.container {
+    width: 1360px;
+    box-sizing: border-box;
+    padding: 0 68px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+    box-sizing: border-box;
+}
+
+.headercontent {
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 156px;
+    height: 21px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(151, 151, 151);
+}
+
+.menu {
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    border-radius: 4px;
+    width: 137px;
+    height: 126px;
+    padding: 20px 26px 20px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 10px 23px 0px rgba(0, 0, 0, 0.07);
+
+}
+
+.menuvisibility {
+    visibility: visible;
+}
+
+.menucontent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blockonetext {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 64px 0 40px 0;
+}
+
+.blockone {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+
+.blockonenav {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.onenavactive {
+    position: relative;
+    color: rgb(51, 63, 72);
+}
+
+.onenavactive::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 87px;
+    background-color: rgb(33, 160, 56);
+    top: 32px;
+}
+
+.blocktwocontent {
+    display: flex;
+    gap: 128px;
+    margin-top: 48px;
+}
+
+.twocontentrigth {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.blockhelp {
+    width: 267px;
+}
+
+.blockhelptitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.maintext {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(51, 63, 72) ;
+}
+
+.blockservice {
+    width: 288px;
+}
+
+.mainboldtext {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.graytext {
+    color: rgb(151, 151, 151);
+}
+
+.button {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 29px;
+    padding: 9px 16px 9px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 10%;
+    cursor: pointer;
+}
+
+.buttonblue {
+    color: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
+}
+
+.buttongray {
+    color: rgb(151, 151, 151);
+    border: 1px solid rgb(151, 151, 151);
+}
+
+.margin4 {
+    margin-bottom: 4px;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.twocontentleft {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    align-items: center;
+}
+
+.twocontentmain {
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 806px;
+    box-sizing: border-box;
+}
+
+.orderinfo {
+    padding: 32px;
+    background-color: rgb(250, 249, 249);
+    display: flex;
+    gap: 188px;
+}
+
+.orderstatus {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    border-radius: 4px;
+    background: rgb(151, 151, 151);
+    padding: 0px 8px 0px 8px;
+}
+
+.yes {
+    background: rgb(9, 165, 82);
+}
+
+.ordernumber {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 12px 0 4px;
+    color: rgb(51, 63, 72);
+}
+
+.textadditional {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.orderrigthinfo {
+    width: 291px;
+}
+
+.width210 {
+    width: 210px;
+}
+
+.products {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 46px;
+}
+.product {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: 256px;
+    margin-right: 70px;
+}
+
+.productimg {
+    width: 80px;
+    height: 80px;
+   
+}
+
+.blockdetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 32px;
+    border-top: 1px solid rgba(151, 151, 151, 0.3);
+    padding: 20px 6px 20px 44px;
+}
+
+.detailsaction {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+}
+
+.iconsdetails {
+    width: 11px;
+    height: 5px;
+}
+
+.blockdetailscontent {
+    display: flex;
+    padding: 24px 32px 34px;
+    justify-content: space-between;
+}
+
+.detailscontentleft {
+    width: 360px;
+}
+
+.detailisaddress {
+    margin-bottom: 24px;
+}
+
+.detailsclient {
+    width: 280px;
+}
+
+.detailscontentrigth {
+    width: 364px;
+}
+
+.detailsprice {
+    display: flex;
+    gap: 104px;
+}
+
+.detailspriceblock {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.electroniccheck {
+    margin-top: 24px;
+}
+
+.bluetext {
+    color: rgb(0, 110, 255);
+}
+
+.footercontent {
+    box-sizing: border-box;
+    width: 1360px;
+    padding: 30px 69px 30px 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-top: 112px;
+    background: rgb(243, 244, 245);
+}
+
+.footernavigation {
+    display: flex;
+    gap: 136px;
+}
+
+.footernavigationcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerpolicy {
+    margin-top: 104px;
+    display: flex;
+    gap: 16px;
+}
+
+.footertext {
+    color: rgba(51, 63, 72, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footercontentrigth {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.footerservise h2 {
+    margin-bottom: 4px;
+    color: rgba(51, 63, 72, 0.5);
+}
+
+.footerservise {
+    width: 390px;
+}
+
+.footericons {
+    margin-top: 18px;
+    opacity: 0.5;
+}
+
+.footericon {
+    opacity: 0.5;
+    margin-right: 16px;
+}
